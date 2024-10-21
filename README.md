@@ -21,4 +21,4 @@ Se você tem sugestões, correções ou melhorias para o código ou anotações,
 
 ## Contato
 
-Sinta-se à vontade para entrar em contato comigo via E-mail (renansa27@gmail.com) ou LinkedIn (https://www.linkedin.com/in/renan-sá-cavalcante-a7a302143/).
+Sinta-se à vontade para entrar em contato comigo via E-mail (<renansa27@gmail.com>) ou LinkedIn (<https://www.linkedin.com/in/renan-sá-cavalcante-a7a302143/>).
