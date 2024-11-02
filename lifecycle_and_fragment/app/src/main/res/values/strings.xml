@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">lifecycle_and_fragment</string>
+    <string name="destroy">Destroy</string>
+</resources>
