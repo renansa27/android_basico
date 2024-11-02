@@ -1,7 +1,9 @@
 package renan.puc.lifecycle_and_fragment
 
+import android.graphics.Color
 import android.os.Bundle
 import android.widget.Button
+import android.widget.FrameLayout
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -14,14 +16,30 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
+
+        val blackFragment = BlankFragment()
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
 
-        findViewById<Button>(R.id.button).setOnClickListener {
+        findViewById<Button>(R.id.buttonDestroy).setOnClickListener {
             finish();
+        }
+
+//        val fragmentTransaction = supportFragmentManager.beginTransaction()
+//        fragmentTransaction.add(R.id.fragmentHost, blackFragment).commit()
+
+        findViewById<Button>(R.id.buttonRemove).setOnClickListener {
+            val fragmentTransaction = supportFragmentManager.beginTransaction()
+            fragmentTransaction.remove(blackFragment).commit()
+        }
+
+        findViewById<Button>(R.id.buttonAdd).setOnClickListener {
+            val fragmentTransaction = supportFragmentManager.beginTransaction()
+            fragmentTransaction.replace(R.id.fragmentHost, blackFragment).commit()
         }
 
         println("$TAG${javaClass.simpleName}::onCreate");
