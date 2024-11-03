@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">componentes_basicos_android</string>
+    <string name="procurar">Procurar</string>
+    <string name="procurar_hint">Procurar por...</string>
+</resources>
